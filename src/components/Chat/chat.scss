@@ -13,6 +13,28 @@
   overflow: hidden;
   transform: translateX(25%) translateY(35%) scale(0.5, 0.5);
   transition: transform 0.2s ease, opacity 0.2s ease-in, height 0s ease 0.2s;
+
+  &.min {
+    height: auto;
+    transform: translate3d(0px, 0px, 0px) scale(1, 1);
+    transition: transform 0.2s ease, opacity 0.2s ease-in;
+    bottom: 20px;
+    max-width: 370px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    right: 100px;
+    .header-wrapper, .input-container {
+      display: none;
+    }
+    .icon-close-min{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+  }
   &.opened {
     height: 500px;
     opacity: 1;
@@ -90,13 +112,16 @@
     .bot-message {
       align-self: flex-start;
       margin-right: 75px;
-      animation: present-yourself 0.3s ease 0.1s forwards;
+      animation: 0.3s ease 0.1s forwards;
+      border-radius: 11px 11px 11px 0px;
     }
     .user-message {
       background-color: #f5f5f58d;
       align-self: flex-end;
       margin-left: 75px;
-      animation: present-yourself 0.3s ease 0.1s forwards;
+      animation: 0.3s ease 0.1s forwards;
+      border-radius: 11px 11px 0px 11px;
+
     }
     .typing {
       width: 50px;
@@ -121,6 +146,27 @@
         }
         &:last-child {
           margin-right: 0;
+        }
+      }
+    }
+
+    .chips-wrapper{
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      a{
+        background-color: #fff;
+        border-radius: 0px 14px 14px 14px;
+        border: 1px solid #00000065;
+        box-shadow: 0px 2px 2px 0px #00000065;
+        cursor: pointer;
+        padding: 8px 3px;
+        text-decoration: none;
+        vertical-align: bottom;
+        user-select: none;
+        transition: background-color .2s ease-in-out;
+        &:hover{
+          background-color: #e6e6e6;
         }
       }
     }
