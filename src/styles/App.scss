@@ -5,3 +5,14 @@
   z-index: 100;
 }
 
+.container{
+  display: flex;
+  justify-content: center;
+  height: 100vh;  
+}
+.results{
+  min-width: 1000px;
+  height: 300px;
+  border-radius: 20px;
+  border: 1px solid #555;
+}
