@@ -16,6 +16,7 @@ const INITIAL_STATE = [
 
 const ACTION_TYPES = {
   ADD_MESSAGE: 'ADD_MESSAGE',
+  ADD_CHIPS: 'ADD_CHIPS'
 };
 
 const messageReducer = (state, action) => {
@@ -23,6 +24,9 @@ const messageReducer = (state, action) => {
   const id = crypto.randomUUID();
   if (type === ACTION_TYPES.ADD_MESSAGE) {
     return [...state, { id: id, rol: payload.rol, message: payload.message }];
+  }
+  if(type === ACTION_TYPES.ADD_CHIPS ){
+    return [...state, { id: id, rol: payload.rol, message: payload.message, chips: payload.chips }]
   }
 
   return state;
@@ -40,8 +44,15 @@ export function MessageProvider({ children }) {
     });
   };
 
+  const addMessageWithChips = (message) =>{
+    dispatch({
+      type: ACTION_TYPES.ADD_CHIPS,
+      payload: { rol: message.rol, message: message.message, chips: message.chips }
+    })
+  }
+
   return (
-    <MessageContext.Provider value={{ messageState: state, addMessage }}>
+    <MessageContext.Provider value={{ messageState: state, addMessage, addMessageWithChips }}>
       {children}
     </MessageContext.Provider>
   );

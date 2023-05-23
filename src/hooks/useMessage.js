@@ -4,11 +4,10 @@ import { MessageContext } from '../context/message';
 export default function useMessage() {
     const [userMessage, setUserMessage] = useState('');
     const [validInput, setValidInput] = useState(false);
-    const { messageState, addMessage } = useContext(MessageContext)
+    const { messageState, addMessage, addMessageWithChips } = useContext(MessageContext)
 
     const handleChangeMessage = (e) => {
         setUserMessage(e.target.value);
-        console.log(messageState)
     };
 
     const handleClearMessage = () => {
@@ -29,6 +28,7 @@ export default function useMessage() {
         handleChangeMessage,
         handleClearMessage,
         addMessage,
-        messageState
+        messageState,
+        addMessageWithChips
     }
 }
