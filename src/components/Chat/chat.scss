@@ -13,15 +13,14 @@
   overflow: hidden;
   transform: translateX(25%) translateY(35%) scale(0.5, 0.5);
   transition: transform 0.2s ease, opacity 0.2s ease-in, height 0s ease 0.2s;
-
+  
   &.min {
     height: auto;
     transform: translate3d(0px, 0px, 0px) scale(1, 1);
     transition: transform 0.2s ease, opacity 0.2s ease-in;
     bottom: 20px;
     max-width: 370px;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
     right: 100px;
     .header-wrapper, .input-container {
       display: none;

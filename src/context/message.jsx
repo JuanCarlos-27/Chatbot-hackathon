@@ -1,4 +1,5 @@
 import { createContext, useReducer } from 'react';
+import { ROLES } from '../consts';
 
 const INITIAL_STATE = [
   // {
@@ -42,6 +43,13 @@ export function MessageProvider({ children }) {
       type: ACTION_TYPES.ADD_MESSAGE,
       payload: { rol: message.rol, message: message.message },
     });
+
+    if(message.rol === ROLES.BOT){
+      // create a sound effect
+      const audio = new Audio('./assets/notification-sound.mp3');
+      audio.play();
+      
+    }
   };
 
   const addMessageWithChips = (message) =>{
