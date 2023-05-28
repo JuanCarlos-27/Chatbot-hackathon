@@ -68,6 +68,10 @@
         background-color: #fff;
         border-radius: 0 0 4px 4px;
         color: #000;
+
+        &:disabled{
+          opacity: 0.5;
+        }
       }
       button {
         border: none;

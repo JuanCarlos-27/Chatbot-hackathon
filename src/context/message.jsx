@@ -1,23 +1,11 @@
 import { createContext, useReducer } from 'react';
-import { ROLES } from '../consts';
 
-const INITIAL_STATE = [
-  // {
-  //   id: 1,
-  //   rol: "bot",
-  //   message:
-  //     "Bienvenido a InfoJobs, el portal líder en empleo. Estoy aquí para ayudarte a encontrar el trabajo ideal. Cuéntame, ¿en qué sector o área te gustaría trabajar?",
-  // },
-  // {
-  //   id: 2,
-  //   rol: "user",
-  //   message: "Hola",
-  // },
-];
+const INITIAL_STATE = [];
 
 const ACTION_TYPES = {
   ADD_MESSAGE: 'ADD_MESSAGE',
-  ADD_CHIPS: 'ADD_CHIPS'
+  ADD_CHIPS: 'ADD_CHIPS',
+  ADD_JOB_OFFERS: 'ADD_JOB_OFFERS',
 };
 
 const messageReducer = (state, action) => {
@@ -43,13 +31,6 @@ export function MessageProvider({ children }) {
       type: ACTION_TYPES.ADD_MESSAGE,
       payload: { rol: message.rol, message: message.message },
     });
-
-    if(message.rol === ROLES.BOT){
-      // create a sound effect
-      const audio = new Audio('./assets/notification-sound.mp3');
-      audio.play();
-      
-    }
   };
 
   const addMessageWithChips = (message) =>{

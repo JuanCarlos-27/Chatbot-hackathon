@@ -3,39 +3,38 @@ import { SendIcon } from '../icons';
 import useSessionId from '../../hooks/useSessionId';
 import useMessage from '../../hooks/useMessage';
 import { ROLES } from '../../consts';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 export default function InputMessage({ onError, onTyping }) {
   const { sessionId } = useSessionId();
+  const [endConversation, setEndConversation] = useState(false);
   const {
     addMessage,
     validInput,
     userMessage,
     handleChangeMessage,
-    handleClearMessage,
+    handleClearInput,
     addMessageWithChips,
   } = useMessage();
 
   useEffect(() => {
-    console.log('render')
-    if(sessionId){
-      getDialogflowResponse('Hola', sessionId).then(
-        (response) => {
-          console.log(response)
-          if (response == null) {
-            onError();
-            return;
-          }
-          response?.text?.forEach((message) => {
-            addMessage({ message, rol: ROLES.BOT });
-          });
+    if (sessionId) {
+      getDialogflowResponse('Hola', sessionId).then((response) => {
+        if (response == null) {
+          onError();
+          return;
         }
-      );
+        response?.text?.forEach((message) => {
+          addMessage({ message, rol: ROLES.BOT });
+        });
+      });
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sessionId]);
+
   const handleSubmitForm = async (e) => {
     e.preventDefault();
     if (validInput) {
-      handleClearMessage();
+      handleClearInput();
       addMessage({ message: userMessage, rol: ROLES.USER });
       onTyping(true);
       const dialogflowResponse = await getDialogflowResponse(
@@ -60,6 +59,9 @@ export default function InputMessage({ onError, onTyping }) {
           addMessage({ message, rol: ROLES.BOT });
         });
       }
+      if (dialogflowResponse.endInteraction) {
+        setEndConversation(true);
+      }
     }
   };
   return (
@@ -71,6 +73,7 @@ export default function InputMessage({ onError, onTyping }) {
           value={userMessage}
           onChange={handleChangeMessage}
           placeholder="Ingresa tu mensaje"
+          disabled={endConversation}
         />
         <button>
           <SendIcon isValid={validInput} />

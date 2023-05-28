@@ -4,6 +4,7 @@ import InputMessage from './InputMessage';
 import useMessage from '../../hooks/useMessage';
 import { CloseIcon } from '../icons';
 import useBubble from '../../hooks/useBubble';
+import NotificationSound from '../NotificacionSound';
 
 export default function ChatLayout() {
   const [error, setError] = useState(false);
@@ -44,6 +45,7 @@ export default function ChatLayout() {
               return <Message key={id} message={text} rol={rol} />;
             })}
             {botTyping && <BotTyping />}
+            {!botTyping && <NotificationSound />}
           </div>
         </div>
       )}
@@ -51,16 +53,6 @@ export default function ChatLayout() {
     </div>
   );
 }
-
-// function Chips({ chips }) {
-//   return (
-//     <div className="chips-wrapper">
-//       {chips.map((chip) => (
-//         <a key={chip}>{chip}</a>
-//       ))}
-//     </div>
-//   );
-// }
 
 function BotTyping() {
   return (
@@ -72,10 +64,5 @@ function BotTyping() {
   );
 }
 function Message({ rol, message }) {
-  return (
-    <>
-      <div className={`message ${rol}-message`}>{message}</div>
-      {/* {chips && <Chips chips={chips} />} */}
-    </>
-  );
+  return <div className={`message ${rol}-message`}>{message}</div>;
 }

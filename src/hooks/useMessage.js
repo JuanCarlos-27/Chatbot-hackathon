@@ -10,7 +10,7 @@ export default function useMessage() {
         setUserMessage(e.target.value);
     };
 
-    const handleClearMessage = () => {
+    const handleClearInput = () => {
         setUserMessage('');
     }
 
@@ -26,7 +26,7 @@ export default function useMessage() {
         userMessage,
         validInput,
         handleChangeMessage,
-        handleClearMessage,
+        handleClearInput,
         addMessage,
         messageState,
         addMessageWithChips

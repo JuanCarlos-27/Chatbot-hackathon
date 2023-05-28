@@ -11,6 +11,7 @@ export async function getDialogflowResponse(message, sessionId) {
             body: JSON.stringify({ message, sessionId })
         })
         const data = await response.json()
+        console.log(data)
         return data.message
 
     } catch (error) {
