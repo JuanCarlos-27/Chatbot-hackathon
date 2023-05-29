@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-const NOTIFICATION_SOUND = '../public/notification-sound.mp3';
+const NOTIFICATION_SOUND = '/notification-sound.mp3';
 
 export default function NotificationSound() {
   const audioRef = useRef(null);
