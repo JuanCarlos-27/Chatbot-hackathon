@@ -3,8 +3,11 @@ import { SendIcon } from '../icons';
 import useSessionId from '../../hooks/useSessionId';
 import useMessage from '../../hooks/useMessage';
 import { ROLES } from '../../consts';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { OfferJobsContext } from '../../context/offerJobs';
 export default function InputMessage({ onError, onTyping }) {
+  const { addOffers } = useContext(OfferJobsContext);
+
   const { sessionId } = useSessionId();
   const [endConversation, setEndConversation] = useState(false);
   const {
@@ -61,6 +64,8 @@ export default function InputMessage({ onError, onTyping }) {
       }
       if (dialogflowResponse.endInteraction) {
         setEndConversation(true);
+        addOffers(dialogflowResponse.offers);
+        
       }
     }
   };

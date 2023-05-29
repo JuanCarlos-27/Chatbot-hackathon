@@ -1,24 +1,25 @@
 import { createContext, useState } from 'react';
 
-export const OfferJobsContext = createContext();
-
 const INITIAL_STATE = [
   {
-    id: 1,
-    title: 'Frontend Developer',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    salary: '1000',
-    location: 'Bogotá',
+    id: 'cc8923015d4b038a82708f346b1d76',
+    title:
+      'Beca InfoJobs Tech: 3 meses en Australia, ¡aprendiendo inglés con trabajo y todos los gastos pagados!',
+    city: 'Madrid',
+    category: 'Informática y telecomunicaciones',
+    subcategory: 'Programación',
+    link: 'https://www.infojobs.net/madrid/beca-infojobs-tech-3-meses-australia-aprendiendo-ingles-con-trabajo-todos-los-gastos-pagados/of-icc8923015d4b038a82708f346b1d76',
+    salary: '900€ - 1.050€ Bruto/mes'
   },
 ];
+
+export const OfferJobsContext = createContext();
 
 export function OfferJobsProvider({ children }) {
   const [offersJobs, setOffersJobs] = useState(INITIAL_STATE);
 
-  console.log(offersJobs)
   const addOffers = (offers) => {
-    setOffersJobs([...offersJobs, offers]);
+    setOffersJobs([...offers]);
   };
   return (
     <OfferJobsContext.Provider value={{ offersJobs, addOffers }}>

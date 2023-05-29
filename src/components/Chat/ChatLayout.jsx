@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './chat.scss';
 import InputMessage from './InputMessage';
 import useMessage from '../../hooks/useMessage';
@@ -7,6 +7,7 @@ import useBubble from '../../hooks/useBubble';
 import NotificationSound from '../NotificacionSound';
 
 export default function ChatLayout() {
+  const chatRef = useRef();
   const [error, setError] = useState(false);
   const [botTyping, setBotTyping] = useState(false);
   const { messageState } = useMessage();
@@ -16,9 +17,12 @@ export default function ChatLayout() {
     closeMinChatBubble,
   } = useBubble();
 
+  useEffect(() => {
+    chatRef.current.scrollTop = chatRef.current.scrollHeight;
+  }, [messageState]);
+
   const handleError = () => setError(true);
   const handleBotTyping = (state) => setBotTyping(state);
-
   return (
     <div
       className={`chat-wrapper ${
@@ -37,9 +41,8 @@ export default function ChatLayout() {
       {error && (
         <div className="error">Ha ocurrido un error, vuelve a intentarlo</div>
       )}
-      {messageState.length !== 0 && (
         <div className="messages-list-wrapper">
-          <div className="message-list">
+          <div className="message-list"  ref={chatRef}>
             {messageState.map((message) => {
               const { message: text, id, rol } = message;
               return <Message key={id} message={text} rol={rol} />;
@@ -48,7 +51,6 @@ export default function ChatLayout() {
             {!botTyping && <NotificationSound />}
           </div>
         </div>
-      )}
       <InputMessage onError={handleError} onTyping={handleBotTyping} />
     </div>
   );
