@@ -1,0 +1,257 @@
+[
+  {
+    "value": "Acceso al mercado y relaciones institucionales",
+    "synonyms": ["Acceso al mercado y relaciones institucionales"]
+  },
+  {
+    "value": "Administraciones europeas",
+    "synonyms": ["Administraciones europeas"]
+  },
+  { "value": "Administración", "synonyms": ["Administración"] },
+  {
+    "value": "Administración autonómica",
+    "synonyms": ["Administración autonómica"]
+  },
+  {
+    "value": "Administración de bases de datos",
+    "synonyms": ["Administración de bases de datos"]
+  },
+  {
+    "value": "Administración del Estado",
+    "synonyms": ["Administración del Estado"]
+  },
+  {
+    "value": "Administración inmobiliaria",
+    "synonyms": ["Administración inmobiliaria"]
+  },
+  { "value": "Administración local", "synonyms": ["Administración local"] },
+  { "value": "Aeronáutico", "synonyms": ["Aeronáutico"] },
+  { "value": "Agente comercial", "synonyms": ["Agente comercial"] },
+  {
+    "value": "Agricultura y jardinería",
+    "synonyms": ["Agricultura y jardinería"]
+  },
+  { "value": "Agrónomo y montes", "synonyms": ["Agrónomo y montes"] },
+  { "value": "Almacén", "synonyms": ["Almacén"] },
+  { "value": "Análisis", "synonyms": ["Análisis"] },
+  { "value": "Arquitectura", "synonyms": ["Arquitectura"] },
+  {
+    "value": "Arquitectura y proyección",
+    "synonyms": ["Arquitectura y proyección"]
+  },
+  { "value": "Artes interpretativas", "synonyms": ["Artes interpretativas"] },
+  { "value": "Artes plásticas", "synonyms": ["Artes plásticas"] },
+  { "value": "Artesanía", "synonyms": ["Artesanía"] },
+  { "value": "Asuntos regulatorios", "synonyms": ["Asuntos regulatorios"] },
+  { "value": "Atención al cliente", "synonyms": ["Atención al cliente"] },
+  { "value": "Auditoría", "synonyms": ["Auditoría"] },
+  { "value": "Automoción", "synonyms": ["Automoción"] },
+  { "value": "Banca empresarial", "synonyms": ["Banca empresarial"] },
+  { "value": "Banca privada", "synonyms": ["Banca privada"] },
+  {
+    "value": "Bolsa, valores e inversión",
+    "synonyms": ["Bolsa, valores e inversión"]
+  },
+  { "value": "Calidad", "synonyms": ["Calidad"] },
+  {
+    "value": "Calidad, producción e I+D",
+    "synonyms": ["Calidad, producción e I+D"]
+  },
+  { "value": "Carpintería", "synonyms": ["Carpintería"] },
+  {
+    "value": "Certificación de calidad",
+    "synonyms": ["Certificación de calidad"]
+  },
+  { "value": "Comercial", "synonyms": ["Comercial"] },
+  { "value": "Comercial y ventas", "synonyms": ["Comercial y ventas"] },
+  { "value": "Comercio exterior", "synonyms": ["Comercio exterior"] },
+  {
+    "value": "Compras y aprovisionamiento",
+    "synonyms": ["Compras y aprovisionamiento"]
+  },
+  {
+    "value": "Comunicación corporativa",
+    "synonyms": ["Comunicación corporativa"]
+  },
+  { "value": "Confección", "synonyms": ["Confección"] },
+  { "value": "Consultoría", "synonyms": ["Consultoría"] },
+  { "value": "Consumo y alimentación", "synonyms": ["Consumo y alimentación"] },
+  { "value": "Creación audiovisual", "synonyms": ["Creación audiovisual"] },
+  { "value": "Cuerpos de seguridad", "synonyms": ["Cuerpos de seguridad"] },
+  {
+    "value": "Derecho civil, penal y constitucional",
+    "synonyms": ["Derecho civil, penal y constitucional"]
+  },
+  { "value": "Derecho internacional", "synonyms": ["Derecho internacional"] },
+  { "value": "Derecho procesal", "synonyms": ["Derecho procesal"] },
+  { "value": "Derecho y empresa", "synonyms": ["Derecho y empresa"] },
+  {
+    "value": "Desarrollo de marca y producto",
+    "synonyms": ["Desarrollo de marca y producto"]
+  },
+  { "value": "Dirección y gerencia", "synonyms": ["Dirección y gerencia"] },
+  {
+    "value": "Dirección y gestión de obras",
+    "synonyms": ["Dirección y gestión de obras"]
+  },
+  { "value": "Diseño gráfico", "synonyms": ["Diseño gráfico"] },
+  { "value": "Diseño industrial", "synonyms": ["Diseño industrial"] },
+  { "value": "Diseño web", "synonyms": ["Diseño web"] },
+  {
+    "value": "Distribución y logística",
+    "synonyms": ["Distribución y logística"]
+  },
+  {
+    "value": "ERP, CRM, Business Intelligence",
+    "synonyms": ["ERP, CRM, Business Intelligence"]
+  },
+  { "value": "Editorial e imprenta", "synonyms": ["Editorial e imprenta"] },
+  { "value": "Educación especial", "synonyms": ["Educación especial"] },
+  { "value": "Educación social", "synonyms": ["Educación social"] },
+  { "value": "Electricidad", "synonyms": ["Electricidad"] },
+  { "value": "Electrónica", "synonyms": ["Electrónica"] },
+  {
+    "value": "Electrónica y automática industrial",
+    "synonyms": ["Electrónica y automática industrial"]
+  },
+  { "value": "Empresas públicas", "synonyms": ["Empresas públicas"] },
+  { "value": "Energias Renovables", "synonyms": ["Energias Renovables"] },
+  { "value": "Enfermería", "synonyms": ["Enfermería"] },
+  { "value": "Enseñanza", "synonyms": ["Enseñanza"] },
+  { "value": "Estética y cosmética", "synonyms": ["Estética y cosmética"] },
+  {
+    "value": "Facturación, cobros y pagos",
+    "synonyms": ["Facturación, cobros y pagos"]
+  },
+  { "value": "Farmacia", "synonyms": ["Farmacia"] },
+  {
+    "value": "Finanzas y contabilidad",
+    "synonyms": ["Finanzas y contabilidad"]
+  },
+  { "value": "Fontanería", "synonyms": ["Fontanería"] },
+  { "value": "Formación", "synonyms": ["Formación"] },
+  { "value": "Fotografía ", "synonyms": ["Fotografía "] },
+  {
+    "value": "Geología, geodesia y cartografía",
+    "synonyms": ["Geología, geodesia y cartografía"]
+  },
+  {
+    "value": "Gestión de centros educativos",
+    "synonyms": ["Gestión de centros educativos"]
+  },
+  { "value": "Gestión de la calidad", "synonyms": ["Gestión de la calidad"] },
+  { "value": "Gestión de proyectos", "synonyms": ["Gestión de proyectos"] },
+  { "value": "Gestión de proyectos", "synonyms": ["Gestión de proyectos"] },
+  { "value": "Gran cuenta", "synonyms": ["Gran cuenta"] },
+  {
+    "value": "Hardware, redes y seguridad",
+    "synonyms": ["Hardware, redes y seguridad"]
+  },
+  { "value": "Helpdesk", "synonyms": ["Helpdesk"] },
+  { "value": "Hostelería", "synonyms": ["Hostelería"] },
+  { "value": "Industrial", "synonyms": ["Industrial"] },
+  {
+    "value": "Ingeniería civil y obras públicas",
+    "synonyms": ["Ingeniería civil y obras públicas"]
+  },
+  {
+    "value": "Ingeniería de materiales",
+    "synonyms": ["Ingeniería de materiales"]
+  },
+  { "value": "Interiorismo", "synonyms": ["Interiorismo"] },
+  {
+    "value": "Investigación clínica y asuntos médicos",
+    "synonyms": ["Investigación clínica y asuntos médicos"]
+  },
+  {
+    "value": "Investigación de mercados",
+    "synonyms": ["Investigación de mercados"]
+  },
+  {
+    "value": "Investigación y desarrollo",
+    "synonyms": ["Investigación y desarrollo"]
+  },
+  { "value": "Limpieza", "synonyms": ["Limpieza"] },
+  { "value": "Mantenimiento", "synonyms": ["Mantenimiento"] },
+  { "value": "Marketing", "synonyms": ["Marketing"] },
+  {
+    "value": "Marketing y comunicación",
+    "synonyms": ["Marketing y comunicación"]
+  },
+  { "value": "Medicina especializada", "synonyms": ["Medicina especializada"] },
+  { "value": "Medicina general", "synonyms": ["Medicina general"] },
+  { "value": "Medicinas alternativas", "synonyms": ["Medicinas alternativas"] },
+  { "value": "Medio ambiente", "synonyms": ["Medio ambiente"] },
+  { "value": "Metrología", "synonyms": ["Metrología"] },
+  { "value": "Minas", "synonyms": ["Minas"] },
+  { "value": "Moda y confección", "synonyms": ["Moda y confección"] },
+  { "value": "Naval y oceánico", "synonyms": ["Naval y oceánico"] },
+  {
+    "value": "Negociación y contratación",
+    "synonyms": ["Negociación y contratación"]
+  },
+  { "value": "Notaría y registros", "synonyms": ["Notaría y registros"] },
+  { "value": "Odontología", "synonyms": ["Odontología"] },
+  {
+    "value": "Oficios de la construcción",
+    "synonyms": ["Oficios de la construcción"]
+  },
+  { "value": "Operaciones", "synonyms": ["Operaciones"] },
+  {
+    "value": "Operaciones societarias",
+    "synonyms": ["Operaciones societarias"]
+  },
+  {
+    "value": "Organización de la empresa",
+    "synonyms": ["Organización de la empresa"]
+  },
+  {
+    "value": "Organización industrial",
+    "synonyms": ["Organización industrial"]
+  },
+  { "value": "Otras ingenierías", "synonyms": ["Otras ingenierías"] },
+  {
+    "value": "Otras profesiones sanitarias",
+    "synonyms": ["Otras profesiones sanitarias"]
+  },
+  { "value": "Otros oficios", "synonyms": ["Otros oficios"] },
+  { "value": "Pedagogía", "synonyms": ["Pedagogía"] },
+  { "value": "Periodismo y edición", "synonyms": ["Periodismo y edición"] },
+  { "value": "Prevención de riesgos", "synonyms": ["Prevención de riesgos"] },
+  { "value": "Producción", "synonyms": ["Producción"] },
+  {
+    "value": "Productos y servicios bancarios",
+    "synonyms": ["Productos y servicios bancarios"]
+  },
+  { "value": "Programación", "synonyms": ["Programación"] },
+  { "value": "Promoción y ferias", "synonyms": ["Promoción y ferias"] },
+  { "value": "Psicología", "synonyms": ["Psicología"] },
+  { "value": "Publicidad", "synonyms": ["Publicidad"] },
+  { "value": "Puericultura", "synonyms": ["Puericultura"] },
+  { "value": "Químico", "synonyms": ["Químico"] },
+  { "value": "RRPP y eventos", "synonyms": ["RRPP y eventos"] },
+  { "value": "Recepción", "synonyms": ["Recepción"] },
+  { "value": "Relaciones laborales", "synonyms": ["Relaciones laborales"] },
+  { "value": "Restauración", "synonyms": ["Restauración"] },
+  { "value": "Secretariado", "synonyms": ["Secretariado"] },
+  { "value": "Seguridad y vigilancia", "synonyms": ["Seguridad y vigilancia"] },
+  { "value": "Seguros", "synonyms": ["Seguros"] },
+  { "value": "Selección de personal", "synonyms": ["Selección de personal"] },
+  { "value": "Sin especificar", "synonyms": ["Sin especificar"] },
+  { "value": "Sistemas", "synonyms": ["Sistemas"] },
+  { "value": "Sistemas de defensa", "synonyms": ["Sistemas de defensa"] },
+  { "value": "Telecomunicaciones", "synonyms": ["Telecomunicaciones"] },
+  {
+    "value": "Televenta y marketing telefónico",
+    "synonyms": ["Televenta y marketing telefónico"]
+  },
+  {
+    "value": "Traducción e interpretación",
+    "synonyms": ["Traducción e interpretación"]
+  },
+  { "value": "Transporte", "synonyms": ["Transporte"] },
+  { "value": "Turismo", "synonyms": ["Turismo"] },
+  { "value": "Técnicas audiovisuales", "synonyms": ["Técnicas audiovisuales"] },
+  { "value": "Venta al detalle", "synonyms": ["Venta al detalle"] },
+  { "value": "Veterinaria", "synonyms": ["Veterinaria"] }
+]

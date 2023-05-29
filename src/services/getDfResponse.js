@@ -1,7 +1,6 @@
 const URL = import.meta.env.VITE_API_URL
 
 export async function getDialogflowResponse(message, sessionId) {
-    
     try {
         const response = await fetch(URL, {
             method: 'POST',
