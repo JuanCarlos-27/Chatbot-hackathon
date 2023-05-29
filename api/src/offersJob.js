@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { experienceParameters, subcategoriesParameters, teleworkingParameters } from './infoJobsKeys.js'
 import dotend from 'dotenv'
 dotend.config()
@@ -14,15 +15,14 @@ export async function getInfoJobsOffers (minSalary, experienceMin, teleworking, 
 
   const URL = `${URL_BASE}?minSalary=${keySalaryMin}&experienceMin=${keyExperienceMin}&teleworking=${keyteleworking}&subcategory=${keySubcategory}`
 
-  const response = await fetch(URL, {
+  const response = await axios.get(URL, {
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Basic ${INFOJOBS_TOKEN}`
     }
   })
 
-  const data = await response.json()
-  const offers = data.items.map(item => {
+  const offers = response?.data?.items.map(item => {
     return {
       id: item?.id,
       title: item?.title,
