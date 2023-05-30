@@ -2,7 +2,8 @@
 
 Este es un chatbot diseñado para interactuar con un agente de chatbot y filtrar ofertas de empleo en la plataforma Infojobs. Proporciona una interfaz sencilla para que los usuarios puedan ver los resultados de manera conveniente.
 
-![image](https://github.com/JuanCarlos-27/Chatbot-hackathon/assets/110681873/47ba62e6-3ba1-4cdd-a79a-419947ef332e)
+![image](https://github.com/JuanCarlos-27/Chatbot-hackathon/assets/110681873/a2969953-0b67-44af-9473-9371b1b89bf9)
+
 
 ## Funcionalidades principales
 
